@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rt="http://www.ms.in/resource/type" xmlns:cp="http://www.ms.in/company/type" targetNamespace="http://www.ms.in/company/type" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.ms.in/resource/type" schemaLocation="D:\Xml\resource.xsd"/>
+	<xs:complexType name="companyType">
+		<xs:sequence>
+			<xs:element name="company-name" type="xs:string"/>
+			<xs:element name="company-type" type="xs:string"/>
+			<xs:element name="resource" type="rt:resourceType" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="company" type="cp:companyType"/>
+</xs:schema>

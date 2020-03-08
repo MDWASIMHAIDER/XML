@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctor:hospital age="45" xmlns:doctor="http://www.appolo.in/doctor/type" xmlns:patient="http://www.appolo.in/patient/type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.appolo.in/doctor/type file:///D:/Xml/doctorNAmeSpaceUsingImport.xsd">
+	<doctor-id>AP1002</doctor-id>
+	<doctor-name>Alfrade</doctor-name>
+	<doctor-dept>Surgery</doctor-dept>
+	<patient >
+		<patient:patient-id>2001</patient:patient-id>
+		<patient:patient-gender>Male</patient:patient-gender>
+		<patient:patient-desease>Heart</patient:patient-desease>
+	</patient>
+</doctor:hospital>

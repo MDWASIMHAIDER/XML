@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<amazon:customer xmlns:amazon="http://www.amazon.in/sales/type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.amazon.in/sales/type file:///D:/Xml/customer.xsd">
+	<amazon:cust-name>md wasim</amazon:cust-name>
+	<amazon:cust-id>1001</amazon:cust-id>
+	<amazon:invoice>
+		<amazon:invoice-id>SB1201</amazon:invoice-id>
+		<amazon:bill-amount>2550.00</amazon:bill-amount>
+		<amazon:bill-add>bihar</amazon:bill-add>
+	</amazon:invoice>
+</amazon:customer>

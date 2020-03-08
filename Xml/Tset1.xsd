@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="Order-Iteem" type="Order"/>
+	<xs:element name="Order-Quantity" type="Purchase"/>
+	<xs:complexType name="Order" >
+			<xs:sequence>
+				<xs:element name="Item-Code" type="xs:string"/>
+	             <xs:element name="quantity" type="xs:int"/>
+			</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="Purchase" >
+			<xs:sequence>
+				<xs:element name="Purchase-Code" type="xs:string"/>
+	             <xs:element name="purchase-quantity" type="xs:int"/>
+			</xs:sequence>
+	</xs:complexType>
+		
+</xs:schema>

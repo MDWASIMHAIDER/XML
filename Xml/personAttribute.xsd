@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:attributeGroup name="personAttribute">
+		<xs:attribute name="age"  type="xs:double"/>
+		<xs:attribute name="height" type="xs:double"/>
+	</xs:attributeGroup>
+	
+		<xs:complexType name="eleType">
+			<xs:attribute name="fname" type="xs:string"/>
+			<xs:attribute name="lname" type="xs:string"/>
+		</xs:complexType>
+	
+	<xs:element name="person">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="email" type="xs:string"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="personAttribute"/>
+		</xs:complexType>
+		
+	</xs:element>
+</xs:schema>

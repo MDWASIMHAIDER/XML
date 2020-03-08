@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchase-order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/po.xsd">
+	<order-item>
+		<items>
+			<item>
+				<item-code>ASD321B</item-code>
+			</item>
+		</items>
+	</order-item>
+	<shipping-address>
+		<line1>Badi khanjarpur</line1>
+		<line2>Near Tilkamanjhi</line2>
+		<city>Bhagalpur</city>
+		<state>Bihar</state>
+		<zip>812001</zip>
+	</shipping-address>
+</purchase-order>

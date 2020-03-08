@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flight xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/Flight.xsd">
+	<domastic-flight>
+		<id>1001</id>
+		<email>wasim@gmail</email>
+		<source>hyd</source>
+		<destination>patna</destination>
+		<concession-fare>120.78</concession-fare>
+	</domastic-flight>
+	<international-flight>
+		<id>2001</id>
+		<email>jack@gmail</email>
+		<source>lossAngeles</source>
+		<destination>australia</destination>
+		<concession-fare>240.87</concession-fare>
+		<budget>437896</budget>
+	</international-flight>
+</flight>

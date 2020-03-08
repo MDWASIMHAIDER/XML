@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<purchase-order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/style2TypeWritingXSD.xsd">
+	<order-item>
+		<items>
+			<item-code>10AC234</item-code>
+			<quantity>234</quantity>
+		</items>
+	</order-item>
+	<shipping-address>
+		<line1>Bhgalpur</line1>
+		<line2>Bihar</line2>
+	</shipping-address>
+</purchase-order>

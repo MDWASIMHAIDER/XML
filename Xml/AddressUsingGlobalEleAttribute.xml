@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank-account xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/AddressUsingGroupGlobalEleAttributeExample.xsd">
+	<savingd-account firstName="Md"><!--here md is rtaken as default value as Md-->
+		<ac-holder-name>wasim</ac-holder-name>
+		<branch-name>adampur</branch-name>
+		<ifsc>bkid002</ifsc>
+		<min-balance>2000</min-balance>
+	</savingd-account>
+	<currentType turnOver="14567" balanceAmount="132456.65"><!--here turnover attribute became madatory bebcause of xsd rule-->
+		<ac-holder-name>bharat</ac-holder-name>
+		<branch-name>gaziabad</branch-name>
+		<ifsc>sbi1002</ifsc>
+		<tx-limit>8999999</tx-limit>
+	</currentType>
+</bank-account>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE purchase-order SYSTEM "D:\Xml\purchase.dtd">
+<purchase-order purchase-id="101" shop="v-mart" dept="kids" purchase-type="cash">
+	<order-items>
+		<item>
+			<item-code/>
+			<item-code></item-code>
+			<quantity></quantity>
+		</item>
+	</order-items>
+	<shipping-address>
+		<address-line1></address-line1>
+		<address-line2/>
+		<city/>
+		<state/>
+		<zip/>
+		<country/>
+	</shipping-address>
+</purchase-order>

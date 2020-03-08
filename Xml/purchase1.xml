@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/purchase.xsd">
+	<Name>Core JAva</Name>
+	<Price>200.342</Price>
+	<Stream-Type>IT</Stream-Type>
+	<Author-Detail>
+		<Author-Name>wasim</Author-Name>
+		<Phone-Number>987634245</Phone-Number>
+	</Author-Detail>
+</Book>

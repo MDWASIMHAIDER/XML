@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+									elementFormDefault="qualified" 
+									attributeFormDefault="unqualified"
+									targetNamespace="http://www.amazon.in/sales/type"
+									xmlns:amazon="http://www.amazon.in/sales/type">
+						<xs:complexType name="invoiceType">
+							<xs:sequence>
+								<xs:element name="invoice-id" type="xs:string"/>
+								<xs:element name="bill-amount" type="xs:double"/>
+								<xs:element name="bill-add" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>			
+						
+</xs:schema>

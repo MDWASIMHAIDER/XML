@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/AddressUsingInheritance.xsd">
+	<us-address>
+		<line1>main</line1>
+		<line2>sustitute</line2>
+		<zip>4573893</zip>
+		<state>california</state>
+	</us-address>
+	<uk-address>
+		<line1>loop</line1>
+		<line2>main</line2>
+		<portal>uk.com</portal>
+		<country>russia</country>
+	</uk-address>
+</address>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.appolo.in/doctor/type" 
+xmlns:doctor="http://www.appolo.in/doctor/type"
+ xmlns:patient="http://www.appolo.in/patient/type"
+elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<!--<xs:import namespace="http://www.appolo.in/patient/type" schemaLocation="D:\Xml\patient.xsd"/>-->
+	<xs:import namespace="http://www.appolo.in/patient/type" schemaLocation="D:\Xml\patientNameSpaceUsingImport.xsd"/>
+
+	<xs:complexType name="doctorType">
+		<xs:sequence>
+			<xs:element name="doctor-id" type="xs:string"/>
+			<xs:element name="doctor-name" type="xs:string"/>
+			<xs:element name="doctor-dept" type="xs:string"/>
+			<xs:element name="patient" type="patient:patientType"/>
+		</xs:sequence>
+		<xs:attribute name="age" type="xs:int"/>
+	</xs:complexType>
+	<xs:element name="hospital" type="doctor:doctorType">
+				<xs:unique name="MyPersonalUniqueKey">
+					<xs:selector xpath="doctorType"/>
+					<xs:field xpath="@gender"/>
+				</xs:unique>
+	</xs:element>
+</xs:schema>

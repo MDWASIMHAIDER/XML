@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<business xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/netCodeTest.xsd">
+	<bill-amount>6546.98</bill-amount>
+	<Supplier>
+		<Phone>988765533</Phone>
+		<Address>
+			<Line1>bhg</Line1>
+			<Line2>jjhhftry</Line2>
+		</Address>
+	</Supplier>
+	<Customer>
+		<Dob>1991-04-02</Dob>
+		<Address>
+			<Line1>oiuy</Line1>
+			<Line2>ggjjkhh</Line2>
+		</Address>
+	</Customer>
+</business>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cp:company xmlns:cp="http://www.ms.in/company/type" xmlns:pt="http://www.ms.in/project/type" xmlns:rt="http://www.ms.in/resource/type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ms.in/company/type file:///D:/Xml/company.xsd">
+	<cp:company-name>amazon</cp:company-name>
+	<cp:company-type>it company</cp:company-type>
+	<cp:resource>
+		<rt:resource-id>1001</rt:resource-id>
+		<rt:resource-name>bharat</rt:resource-name>
+		<rt:resource-email>bharat.singh40@gmail.com</rt:resource-email>
+		<rt:project>
+			<pt:pid>2100</pt:pid>
+			<pt:pname>gps-tracker</pt:pname>
+		</rt:project>
+	</cp:resource>
+</cp:company>

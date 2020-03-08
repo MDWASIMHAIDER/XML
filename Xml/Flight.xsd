@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="id" type="xs:int"/>
+<xs:element name="concession-fare" type="xs:double"/>
+	<xs:complexType name="domastic-flightType">
+		<xs:sequence>
+			<xs:element ref="id"/><!-- global element declaration-->
+			<xs:element name="email" type="xs:string"/>
+			<xs:element name="source" type="xs:string"/>
+			<xs:element name="destination" type="xs:string"/>
+			<xs:element ref="concession-fare"/><!-- global element declaration-->
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="internationalFlightType">
+		<xs:complexContent>
+			<xs:extension base="domastic-flightType">
+				<xs:sequence>
+					<xs:element name="budget" type="xs:double"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="flightType">
+		<xs:sequence>
+			<xs:element name="domastic-flight" type="domastic-flightType"/>
+			<xs:element name="international-flight" type="internationalFlightType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="flight" type="flightType"/>
+</xs:schema>

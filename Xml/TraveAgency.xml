@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<travel-agency xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/TravelAgency.xsd">
+	<passenger>
+		<passenger-name>wasim</passenger-name>
+		<passenger-email>wasim@91</passenger-email>
+		<journey-date>1991-04-02</journey-date>
+	</passenger>
+	<domestic-flight>
+		<fight-num>luk-A1414</fight-num>
+		<pilot-name>liza</pilot-name>
+		<pilot-contact>98876654</pilot-contact>
+	</domestic-flight>
+	<international-flight>
+		<fight-num>AMC15461</fight-num>
+		<pilot-name>leon</pilot-name>
+		<pilot-contact>987563568</pilot-contact>
+	</international-flight>
+	<visa-status/>
+</travel-agency>

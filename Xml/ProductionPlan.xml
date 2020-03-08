@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Main-Plant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/ProductionPlan.xsd">
+	<scap>
+		<id>1001</id>
+		<name>wasim</name>
+		<type>water</type>
+	</scap>
+	<ccap>
+		<id>2001</id>
+		<name>bharat</name>
+		<type>solar</type>
+	</ccap>
+</Main-Plant>

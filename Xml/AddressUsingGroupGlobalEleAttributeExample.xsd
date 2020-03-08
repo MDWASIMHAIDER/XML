@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:group name="AccountGroup">
+		<!--group creation-->
+		<xs:sequence>
+			<xs:element name="ac-holder-name" type="xs:string"/>
+			<xs:element name="branch-name" type="xs:string"/>
+			<xs:element name="ifsc" type="xs:string"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="savingType">
+		<xs:sequence>
+			<xs:group ref="AccountGroup"/>
+			<xs:element name="min-balance" type="xs:double"/>
+		</xs:sequence>
+		<xs:attribute name="firstName" type="xs:string" fixed="Md"/>
+	</xs:complexType>
+	<xs:complexType name="currentType">
+		<xs:sequence>
+			<xs:group ref="AccountGroup"/>
+			<xs:element name="tx-limit">  <!--here we are defining attributes for simple element  define under element tag-->
+				<xs:complexType>
+					<xs:attribute name="initial-amount" type="xs:positiveInteger" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="turnOver" type="xs:positiveInteger" use="required"/><!--this attribute define for compound element inside complextype -->
+		<xs:attribute name="balanceAmount" type="xs:double" default="12.5"/>
+		<!--this(use="required") make it as compulsory element -->
+		<!-- here default="12.5" takes default value of attribute type-->
+		<!-- attribute cretaion-->
+	</xs:complexType>
+	<xs:complexType name="bankType">
+		<xs:sequence>
+			<xs:element name="savingd-account" type="savingType"/>
+			<xs:element name="currentType" type="currentType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="bank-account" type="bankType"/>
+</xs:schema>

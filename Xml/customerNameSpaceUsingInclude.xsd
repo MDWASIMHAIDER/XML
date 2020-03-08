@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+									targetNamespace="http://www.amazon.in/sales/type"
+									xmlns:amazon="http://www.amazon.in/sales/type"
+									elementFormDefault="qualified"
+									attributeFormDefault="unqualified">
+									<xs:include schemaLocation="D:\Xml\invoice.xsd"/>
+									
+					<xs:complexType name="customerType">
+						<xs:sequence>
+							<xs:element name="cust-name" type="xs:string"/>
+							<xs:element name="cust-id" type="xs:int"/>
+							<xs:element name="invoice" type="amazon:invoiceType"/>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:element name="customer" type="amazon:customerType"/>
+	
+</xs:schema>

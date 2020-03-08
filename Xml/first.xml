@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE person SYSTEM "D:\Xml\syntaxtest.dtd">
+<person>
+	<name>wasim</name>
+	<phone>89387646488</phone>
+	<phone>99473442689</phone>
+	<address>
+		<pin>812010</pin>
+		<city>bhagalpur</city>
+	</address>
+</person>

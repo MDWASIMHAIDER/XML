@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone (#PCDATA)*>
+<!ELEMENT pin (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT address (pin,city)>
+<!ELEMENT person (name,phone,address)>

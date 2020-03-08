@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="passengerType">
+		<xs:sequence>
+			<xs:element name="passenger-name" type="xs:string"/>
+			<xs:element name="passenger-email" type="xs:string"/>
+			<xs:element name="journey-date" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="flightType">
+		<xs:sequence>
+			<xs:element name="fight-num" type="xs:string"/>
+			<xs:element name="pilot-name" type="xs:string"/>
+			<xs:element name="pilot-contact" type="xs:positiveInteger"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="travel-agency">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="passenger" type="passengerType"/>
+				<xs:element name="domestic-flight" type="flightType"/>
+				<xs:element name="international-flight" type="flightType"/>
+				<xs:element name="visa-status" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

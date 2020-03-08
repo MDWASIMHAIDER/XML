@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Xml/personAttribute.xsd"
+age="26.5" height="5.9">
+	<name>wasim</name>
+	<email>wasim.haider91@gmail.com</email>
+</person>
